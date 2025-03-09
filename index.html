@@ -9,25 +9,32 @@
     />
 
     <style>
-        body{
+        body {
             text-align: center;
         }
         button {
             background-color: lightblue;
             border-radius: 6px;
         }
+        .pokemon-info {
+            margin-top: 20px;
+        }
     </style>
-
   </head>
 
+  <body>
     <header>
         <h1>Pokemon Search</h1>
         <p>Enter Pokemon Name or ID</p>
     </header>
 
-    <label for="search">Search</label>
-    <input type="text" name="search" id="search" placeholder="Enter name or ID">
-    <button type="submit" onclick="searchPokemon()">Submit</button>
+    <form id="searchForm">
+        <label for="search">Search</label>
+        <input type="text" name="search" id="search" placeholder="Enter name or ID">
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="pokemonInfo" class="pokemon-info"></div>
 
     <script src="script.js"></script>
   </body>
